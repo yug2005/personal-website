@@ -349,7 +349,43 @@
       <h3 class="page-title white-text teal">Projects</h3>
       <div class="container">
         <div class="row">
-          <div class="col s12 m6 l4">
+          <div id="project-1" class="col s12 m6 l4" data-date="09-02-2024">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="code type image" src="/assets/img/code_type.png" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Code Type<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  Website to practice typing code
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title grey-text"><small>Description</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li>Developed a full stack application Code Type for users to practice programming typing speed using React, TypeScript, Express.js and MySQL</li>
+                  <li>Utilized AWS RDS for MySQL database and hosted backend server on AWS EC2 machine using HTTPS, Nginx and CloudFlare</li>
+                  <li>Utilized OpenAI API with Node.js to generate snippets of readable code for multiple programming languages</li>
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit " href="https://yug2005.github.io/code-type/" target="_blank" data-position="top"
+                    data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                  <a aria-label="Visit the GitHub repo for project" href="https://github.com/yug2005/code-type"
+                    target="_blank" data-position="top" data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="project-2" class="col s12 m6 l4" data-date="09-02-2023" style="display: none">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="raycast image" src="/assets/img/raycast_image.png" style="height: 100%; width: 100%" class="activator" />
@@ -386,42 +422,7 @@
               </div>
             </div>
           </div>
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="code type image" src="/assets/img/code_type.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Code Type<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Website to practice typing code
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Description</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li>Developed a full stack application Code Type for users to practice programming typing speed using React, TypeScript, Express.js and MySQL</li>
-                  <li>Utilized AWS RDS for MySQL database and hosted backend server on AWS EC2 machine using HTTPS, Nginx and CloudFlare</li>
-                  <li>Utilized OpenAI API with Node.js to generate snippets of readable code for multiple programming languages</li>
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit " href="https://yug2005.github.io/code-type/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for project" href="https://github.com/yug2005/code-type"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m6 l4">
+          <div id="project-3" class="col s12 m6 l4" data-date="09-02-2022" style="display: none">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="code type image" src="/assets/img/forgotten_city.png" style="height: 100%; width: 100%" class="activator" />
@@ -450,7 +451,7 @@
               </div>
             </div>
           </div>
-          <div class="col s12 m6 l4">
+          <div id="project-4" class="col s12 m6 l4" data-date="09-02-2021" style="display: none">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="code type image" src="/assets/img/battle_tank.jpg" style="height: 100%; width: 100%" class="activator" />
@@ -480,6 +481,9 @@
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        <button id="button-show-projects" onclick="toggleShowProjects()">Show More</button>
       </div>
     </section>
 
@@ -713,6 +717,31 @@
         closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
       })
     })
+  </script>
+  <script>
+    let showProjects = false;
+    function toggleShowProjects() {
+      showProjects = !showProjects;
+      let projects = [];
+      for (let i = 0; i <= 3; i++) {
+        projects.push(document.getElementById(`project-${i + 1}`));
+      }
+      projects = projects.sort((a, b) => {
+        return new Date(b.getAttribute('data-date')) - new Date(a.getAttribute('data-date'));
+      }); 
+      if (showProjects) {
+        document.getElementById("button-show-projects").innerText = "Show Less";
+        for (let i = 0; i <= 3; i++) {
+          projects[i].style.display = 'block';
+        }
+      } else {
+        document.getElementById("button-show-projects").innerText = "Show More";
+        projects[0].style.display = 'block';
+        for (let i = 1; i <= 3; i++) {
+          projects[i].style.display = 'none';
+        }
+      }
+    }
   </script>
 </body>
 
