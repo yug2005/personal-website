@@ -42,5 +42,8 @@ Website Screenshot :
 
 Repo Screenshot :
 
+![image](https://github.com/user-attachments/assets/e14d4991-d70b-4760-a191-e6603681070c)
+
 Website Screenshot :
 
+![image](https://github.com/user-attachments/assets/9734e16b-b10e-4fca-b97f-9d99c2e9b8bf)
