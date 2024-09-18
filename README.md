@@ -18,4 +18,19 @@ Website Screenshot :
 
 ![image](https://github.com/user-attachments/assets/d975416f-04e4-433f-8aa7-33411bf182b7)
 
+### Activity 3
+
+Repo Screenshot :
+
+<img width="1440" alt="image" src="https://github.com/user-attachments/assets/c5a686dc-9552-4781-baeb-fdb8beb47783">
+
+Website Screenshot :
+
+<img width="1440" alt="image" src="https://github.com/user-attachments/assets/793c4bbe-e307-4214-af03-72f475800e0d">
+
+### Activity 4
+
+Repo Screenshot :
+
+Website Screenshot :
 
