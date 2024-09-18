@@ -32,5 +32,15 @@ Website Screenshot :
 
 Repo Screenshot :
 
+<img width="1440" alt="image" src="https://github.com/user-attachments/assets/9ea25292-c090-4ae6-bc6c-9727a5e8ad13">
+
+Website Screenshot :
+
+<img width="1440" alt="image" src="https://github.com/user-attachments/assets/3ec9e734-c4ea-44c9-9c2a-4c90146ecb27">
+
+### Activity 5
+
+Repo Screenshot :
+
 Website Screenshot :
 
