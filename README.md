@@ -2,6 +2,20 @@
 
 This is my personal website. This is a clone of the repository [Personal Portfolio Template](https://github.com/varadbhogayata/varadbhogayata.github.io).
 
+### Activity 1
+
 Repo Screenshot : 
 
 <img width="1440" alt="image" src="https://github.com/user-attachments/assets/fca1cd6e-d245-4cd4-ad70-f359a3cdc782">
+
+### Activity 2
+
+Repo Screenshot :
+
+<img width="1440" alt="image" src="https://github.com/user-attachments/assets/520c4415-688b-44c1-a8f0-6079bec86992">
+
+Website Screenshot :
+
+![image](https://github.com/user-attachments/assets/d975416f-04e4-433f-8aa7-33411bf182b7)
+
+
